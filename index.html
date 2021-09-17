@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mi blog</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <!-- tr significa Table Row-->
+            <tr>
+                <!-- th significa Table Head-->
+                <th> Producto </th>
+                <th> Precio </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito</td>
+                <td>$19,90</td>
+            </tr>
+            <tr>
+                <td>Chancho</td>
+                <td>$29,90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total $49,80</td>
+        </tfoot>
+    </table>
+
+
+
+
+    <!-- ul es lista no ordenada -->
+    <!-- li significa List Item -->
+    <ul>
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+    </ul>
+    <!-- ol significa order list -->
+    <ol>
+        <li value="50">Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre</label>
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="nombre" />
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="apellido" />
+        <br><br>
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" rows="10" cols="50" placeholder="Ingrese comentario"
+            id=""></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
